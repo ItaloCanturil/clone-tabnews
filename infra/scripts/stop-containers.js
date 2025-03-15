@@ -1,6 +1,6 @@
-const { spawn } = require('node:child_process');
+const { spawn } = require("node:child_process");
 
-spawn("next dev", {stdio: "inherit", shell: true});
+spawn("next dev", { stdio: "inherit", shell: true });
 
 function stopContainers() {
   console.log("\n 🔴 Desligando containers");
@@ -9,8 +9,8 @@ function stopContainers() {
     detached: true,
     shell: true,
     windowsHide: true,
-    stdio: "ignore"
-  })
+    stdio: "ignore",
+  });
 }
 
 process.on("SIGINT", stopContainers);
