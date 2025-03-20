@@ -1,0 +1,24 @@
+.status_page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper__data ul {
+  padding: 0;
+}
+
+.wrapper__data ul li {
+  list-style: none;
+}
+
+.badge {
+  padding: 2px 4px;
+  border: 1px solid #3fb947;
+  border-radius: 10px;
+  color: #3fb947;
+  margin-left: 4px;
+}
