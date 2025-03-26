@@ -9,7 +9,7 @@ function getMigrationOption(dbClient, liveRun) {
     dryRun: !liveRun,
     dir: resolve("infra", "migrations"),
     direction: "up",
-    verbose: true,
+    log: () => {},
     migrationsTable: "pgmigrations",
   };
 }
