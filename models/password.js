@@ -1,4 +1,4 @@
-import bcryptjs from 'bcryptjs';
+import bcryptjs from "bcryptjs";
 
 async function hash(password) {
   const rounds = getNumberOfRounds();
@@ -15,7 +15,7 @@ async function compare(providedPassword, storedPassword) {
 
 const password = {
   hash,
-  compare
-}
+  compare,
+};
 
 export default password;
